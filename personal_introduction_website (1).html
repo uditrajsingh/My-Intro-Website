@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Udit Raj Singh | Cyber Security & IAM Specialist</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: radial-gradient(circle at top, #0b1f2a, #020b13 70%);
+      color: #e6f1ff;
+    }
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(0,224,255,0.12), transparent);
+    }
+    header h1 {
+      font-size: 3.2rem;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      color: #7df9ff;
+    }
+    header p {
+      font-size: 1.3rem;
+      opacity: 0.95;
+    }
+    .tagline {
+      margin-top: 15px;
+      font-size: 1rem;
+      color: #9fbcd1;
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 25px;
+      border-left: 5px solid #00e0ff;
+      padding-left: 12px;
+      color: #7df9ff;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(0,224,255,0.2);
+      border-radius: 14px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+    .card p {
+      line-height: 1.7;
+      color: #d6e6f2;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 15px;
+    }
+    .skill {
+      padding: 14px 16px;
+      background: rgba(0,0,0,0.4);
+      border: 1px solid rgba(0,224,255,0.25);
+      border-radius: 10px;
+      font-size: 0.95rem;
+    }
+    .highlight {
+      color: #00e0ff;
+      font-weight: 600;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .cta a {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #00e0ff, #0077ff);
+      color: #001018;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 8px 20px rgba(0,224,255,0.4);
+    }
+    .cta a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(0,224,255,0.6);
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: rgba(0,0,0,0.6);
+      font-size: 0.85rem;
+      color: #9fbcd1;
+    }
+    a.inline {
+      color: #00e0ff;
+      text-decoration: none;
+    }
+    a.inline:hover {
+      text-decoration: underline;
+    }
+      .terminal {
+      max-width: 720px;
+      margin: 0 auto 40px;
+      background: #020b13;
+      border-radius: 12px;
+      border: 1px solid rgba(0,224,255,0.35);
+      box-shadow: 0 0 40px rgba(0,224,255,0.15);
+      text-align: left;
+      overflow: hidden;
+    }
+    .terminal-header {
+      background: rgba(0,224,255,0.12);
+      padding: 10px 14px;
+      font-size: 0.85rem;
+      color: #7df9ff;
+      letter-spacing: 0.5px;
+    }
+    .terminal-body {
+      padding: 20px;
+      font-family: "Courier New", monospace;
+      font-size: 1rem;
+      color: #00ff9c;
+      min-height: 60px;
+    }
+    .prompt {
+      color: #7df9ff;
+      margin-right: 6px;
+    }
+    .cursor {
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+    .skill-bar span {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+      color: #9fbcd1;
+    }
+    .bar {
+      background: rgba(0,0,0,0.6);
+      border: 1px solid rgba(0,224,255,0.3);
+      border-radius: 6px;
+      height: 10px;
+      overflow: hidden;
+    }
+    .fill {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, #00ff9c, #00e0ff);
+      box-shadow: 0 0 12px rgba(0,224,255,0.8);
+      transition: width 1.8s ease;
+    }
+      51%, 100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="terminal">
+      <div class="terminal-header">security-terminal :: iam-profile</div>
+      <div class="terminal-body">
+        <span class="prompt">$</span> <span id="typed"></span><span class="cursor">▮</span>
+      </div>
+    </div>
+    <h1>Udit Raj Singh</h1>
+    <p>Senior Security Analyst | Cyber Security & IAM Specialist</p>
+    <div class="tagline">
+      Securing identities • Hardening access • Enabling trust at scale
+    </div>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <div class="card">
+      <p>
+        Cyber Security professional with <span class="highlight">3+ years of experience</span> in Identity and Access Management (IAM),
+        specializing in enterprise-grade authentication and authorization systems. Proven track record in
+        implementing <span class="highlight">Ping Identity</span> and <span class="highlight">Okta</span> solutions to reduce security risk,
+        meet compliance requirements, and deliver seamless Single Sign-On experiences for large user bases.
+      </p>
+    </div>
+
+    <h2>Core Cyber & IAM Capabilities</h2>
+    <div class="card">
+      <div class="skills scan">
+        <div class="skill-bar" data-level="95"><span>Identity & Access Management (IAM)</span><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill-bar" data-level="90"><span>PingFederate & PingDirectory</span><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill-bar" data-level="90"><span>Okta Identity Cloud</span><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill-bar" data-level="85"><span>SAML 2.0 & OpenID Connect (OIDC)</span><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill-bar" data-level="85"><span>Single Sign-On (SSO)</span><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill-bar" data-level="80"><span>Multi-Factor Authentication (MFA)</span><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill-bar" data-level="80"><span>User Provisioning & De-provisioning</span><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill-bar" data-level="80"><span>Role-Based Access Control (RBAC)</span><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill-bar" data-level="75"><span>Access Policy Design & Enforcement</span><div class="bar"><div class="fill"></div></div></div>
+      </div>
+    </div>
+    </div>
+
+    <h2>Impact & Experience</h2>
+    <div class="card">
+      <p>
+        In my role as a <span class="highlight">Senior Security Analyst</span>, I work closely with application teams,
+        architects, and compliance stakeholders to onboard secure applications, debug complex authentication flows,
+        and enforce least-privilege access models. My focus is always on balancing <span class="highlight">strong security</span>
+        with <span class="highlight">excellent user experience</span>.
+      </p>
+    </div>
+
+    <h2>Recruiter Contact</h2>
+    <div class="card">
+      <p>
+        📧 Email: <a class="inline" href="mailto:your-email@example.com">uditrajsingh.view@gmail.com</a><br />
+        🔗 LinkedIn: <a class="inline" href="#">linkedin.com/in/udit-raj-singh</a><br />
+        📍 Open to Cyber Security & IAM roles (Consulting / Enterprise)
+      </p>
+    </div>
+
+    <div class="cta">
+      <a href="#">Download Resume</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Udit Raj Singh | Cyber Security & IAM Portfolio
+  </footer>
+
+  <script>
+    const text = "Initializing IAM profile... Access granted. Loading Udit Raj Singh :: Cyber Security & IAM Specialist";
+    let index = 0;
+    const speed = 45;
+    const target = document.getElementById("typed");
+
+    function typeEffect() {
+      if (index < text.length) {
+        target.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, speed);
+      }
+    }
+
+    window.onload = () => {
+      typeEffect();
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            document.querySelectorAll('.skill-bar').forEach(bar => {
+              const level = bar.getAttribute('data-level');
+              bar.querySelector('.fill').style.width = level + '%';
+            });
+            observer.disconnect();
+          }
+        });
+      }, { threshold: 0.4 });
+      observer.observe(document.querySelector('.scan'));
+    };
+  </script>
+
+</body>
+</html>
